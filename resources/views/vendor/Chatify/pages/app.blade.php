@@ -16,7 +16,7 @@
                 </nav>
             </nav>
             {{-- Search input --}}
-            {{-- <input type="text" class="messenger-search" placeholder="{{ __('dashboard.search') }}" /> --}}
+            <input type="text" class="messenger-search" placeholder="{{ __('dashboard.search') }}" />
             {{-- Tabs --}}
             {{-- <div class="messenger-listView-tabs">
                 <a href="#" class="active-tab" data-view="users">

@@ -159,3 +159,5 @@ $lastMessageBody = strlen($lastMessageBody) > 30 ? mb_substr($lastMessageBody, 0
     </tr>
 </table>
 @endif
+
+
