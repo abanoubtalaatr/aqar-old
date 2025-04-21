@@ -375,5 +375,6 @@ Route::prefix('chatify')->group(function() {
     // Override the default Chatify routes
     Route::get('/getContacts', [ChatifyController::class, 'getContacts'])->name('chatify.contacts');
     Route::get('/search', [ChatifyController::class, 'search'])->name('chatify.search');
-    // Include other Chatify routes as needed
+    Route::post('/updateContacts', [ChatifyController::class, 'updateContactItem'])->name('contacts.update');
+
 });

@@ -232,4 +232,24 @@ class User extends Authenticatable implements JWTSubject
         }
         return asset('admin/dist/img/avatar.png');
     }
+
+    public function getAvatarAttribute($value)
+    {
+        // If value is empty or contains a URL, use default
+        if (empty($value) || $value == '') {
+            $value = 'avatar.png';
+        }
+
+        // Remove any existing path components
+        $cleanName = basename($value);
+
+        // Verify file exists
+        if (!Storage::exists('public/users-avatar/'.$cleanName)) {
+            $cleanName = 'avatar.png';
+        }
+
+        // Return SINGLE instance of the URL
+        return asset('admin/dist/img/'.$cleanName);
+    }
+    
 }

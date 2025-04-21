@@ -111,23 +111,23 @@ $lastMessageBody = strlen($lastMessageBody) > 30 ? mb_substr($lastMessageBody, 0
 @endif
 
 {{-- -------------------- Search Item -------------------- --}}
-{{-- @if($get == 'search_item')
+@if($get == 'search_item')
 <table class="messenger-list-item" data-contact="{{ $user->id }}">
     <tr data-action="0">
-        
+
         <td>
         <div class="avatar av-m"
         style="background-image: url('{{ $user->avatar }}');">
         </div>
         </td>
-        
+
         <td>
             <p data-id="{{ $user->id }}" data-type="user">
             {{ strlen($user->name) > 12 ? trim(substr($user->name,0,12)).'..' : $user->name }}
         </td>
     </tr>
 </table>
-@endif --}}
+@endif
 
 {{-- -------------------- Shared photos Item -------------------- --}}
 @if($get == 'sharedPhoto')
@@ -159,5 +159,3 @@ $lastMessageBody = strlen($lastMessageBody) > 30 ? mb_substr($lastMessageBody, 0
     </tr>
 </table>
 @endif
-
-

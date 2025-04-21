@@ -399,15 +399,15 @@
              </li>
          @endcan
 
-         <li class="nav-item">
+         {{--  <li class="nav-item">
             <a href="{{ route('admin.profile.edit') }}" class="nav-link {{ activeTab('admin.profile.edit') }}">
                 <i class="nav-icon fas fa-user"></i>
                 <p class="text">@lang('dashboard.profile')</p>
             </a>
-        </li>
+        </li>  --}}
 
          <li class="nav-item">
-             <a target="_blank" href="{{ route('dashboard/chatify') }}" class="nav-link {{ activeTab('dashboard/chatify') }}">
+             <a target="_blank" href="{{ route('chatify') }}" class="nav-link {{ activeTab('dashboard/chatify') }}">
                  <i class="nav-icon fas fa-comments"></i>
                  <p class="text">@lang('dashboard.chat')</p>
              </a>

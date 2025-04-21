@@ -32,7 +32,7 @@
         <link rel="stylesheet" href="{{ dashboardAsset('css/dev.css') }}" />
     @endif
     @yield('styles')
-    
+
 
 </head>
 
@@ -53,10 +53,10 @@
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="{{ route('admin.profile.edit') }}" class="d-block">
+                    {{--  <a href="{{ route('admin.profile.edit') }}" class="d-block">
                         {{-- <img src="{{ auth()->user()?->photo ? asset(auth()->user()?->photo) : dashboardAsset('images/logo.svg') }}" --}}
                         {{-- style="border: 1px solid grey; width:40px; border-radius: 19%;"  alt="User Image"> --}}
-                    </a>
+                    </a>  --}}
                 </li>
                 @include('admin.partials.language_switcher')
 
